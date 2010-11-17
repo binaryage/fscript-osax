@@ -1,0 +1,50 @@
+require 'rake'
+
+################################################################################################
+# constants
+
+ROOT_DIR = File.expand_path('.')
+OSAX_PATH = '/Library/ScriptingAdditions/HolyCrash.osax'
+
+################################################################################################
+# dependencies
+
+begin
+    require 'colored'
+rescue LoadError
+    raise 'You must "gem install colored" to use terminal colors'
+end
+
+################################################################################################
+# helpers
+
+def die(msg, status=1)
+    puts "Error[#{status||$?}]: #{msg}".red
+    exit status||$?
+end
+
+def sys(cmd)
+    puts "> #{cmd}".yellow
+    system(cmd)
+end
+
+################################################################################################
+# tasks
+
+desc "compile and install HolyCrash.osax"
+task :install do 
+    sys("xcodebuild")
+end
+
+desc "uninstall HolyCrash.osax"
+task :uninstall do 
+    sys("rm -rf \"#{OSAX_PATH}\"")
+end
+
+desc "rake crash p=Safari"
+task :crash do 
+    die("specify app name as parameter p, for example `rake crash p=Safari`") unless ENV["p"]
+    sys("osascript -e \"tell application \\\"#{ENV["p"]}\\\" to «event BAHCcrsh»\"")
+end
+
+task :default => :install
