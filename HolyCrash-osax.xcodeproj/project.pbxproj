@@ -86,7 +86,7 @@
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
-				D6758B771208674500F3546B /* ShellScript */,
+				D6758B771208674500F3546B /* Install into /Library/ScriptingAdditions */,
 			);
 			buildRules = (
 			);
@@ -109,6 +109,7 @@
 			};
 			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "HolyCrash-osax" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
@@ -134,7 +135,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D6758B771208674500F3546B /* ShellScript */ = {
+		D6758B771208674500F3546B /* Install into /Library/ScriptingAdditions */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,6 +143,7 @@
 			inputPaths = (
 				$BUILT_PRODUCTS_DIR/HolyCrash.osax,
 			);
+			name = "Install into /Library/ScriptingAdditions";
 			outputPaths = (
 				/Library/ScriptingAdditions/HolyCrash.osax,
 			);
@@ -213,10 +215,6 @@
 		1DEB911F08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -225,26 +223,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		1DEB912008733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					x86_64,
-					i386,
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
