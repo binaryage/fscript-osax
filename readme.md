@@ -1,6 +1,6 @@
 # HolyCrash.osax
 
-**HolyCrash** is scripting addition which adds AppleScript command to crash any application. Provides you with God's powers.
+**HolyCrash** is a scripting addition which adds a new Apple Script command to crash any application. Provides you with God's powers.
 
         God answer you on the day you crash,
         The name God-of-Jacob put you out of harm's reach,
@@ -13,7 +13,7 @@
     
         -- Psalm 20 (The Message)
 
-This is useful when you want to debug crash scenarios of your Mac application (for example Crash Reporting Dialog).
+This is useful when you want to debug crash scenarios of your Mac application (for example a crash reporting dialog).
 
 # Installation
 
@@ -21,7 +21,7 @@ This is useful when you want to debug crash scenarios of your Mac application (f
     cd holycrash-osax
     xcodebuild
 
-If you see `** BUILD SUCCEEDED **` that means that you have HolyCrash installed in `/Library/ScriptingAdditions/HolyCrash.osax`
+If you see `** BUILD SUCCEEDED **` that means that you have HolyCrash installed in `~/Library/ScriptingAdditions/HolyCrash.osax`
 
 # How to crash an app?
 
@@ -38,4 +38,4 @@ Let's say you want to crash Safari...
     osascript -e "tell application \"Safari\" to «event BAHCcrsh»"
 
 
-#### License: [MIT-Style](holycrash-osax/raw/master/license.txt)
+#### License: [MIT-Style](https://raw.github.com/binaryage/holycrash-osax/master/license.txt)

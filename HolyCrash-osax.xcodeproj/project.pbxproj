@@ -86,7 +86,7 @@
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
 				8D576313048677EA00EA77CD /* Frameworks */,
-				D6758B771208674500F3546B /* Install into /Library/ScriptingAdditions */,
+				D6758B771208674500F3546B /* Install into ~/Library/ScriptingAdditions */,
 			);
 			buildRules = (
 			);
@@ -135,7 +135,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D6758B771208674500F3546B /* Install into /Library/ScriptingAdditions */ = {
+		D6758B771208674500F3546B /* Install into ~/Library/ScriptingAdditions */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,13 +143,14 @@
 			inputPaths = (
 				$BUILT_PRODUCTS_DIR/HolyCrash.osax,
 			);
-			name = "Install into /Library/ScriptingAdditions";
+			name = "Install into ~/Library/ScriptingAdditions";
 			outputPaths = (
-				/Library/ScriptingAdditions/HolyCrash.osax,
+				"~/Library/ScriptingAdditions/HolyCrash.osax",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# installation step\nrm -rf \"/Library/ScriptingAdditions/HolyCrash.osax\"\ncp -RLf \"$BUILT_PRODUCTS_DIR/HolyCrash.osax/\" \"/Library/ScriptingAdditions/HolyCrash.osax\"";
+			shellScript = "# installation step\nrm -rf ~/Library/ScriptingAdditions/HolyCrash.osax\ncp -rf \"$BUILT_PRODUCTS_DIR/HolyCrash.osax\" ~/Library/ScriptingAdditions";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
