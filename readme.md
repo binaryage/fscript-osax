@@ -29,7 +29,7 @@ If you see `** BUILD SUCCEEDED **` that means that you have FScript.osax install
 
 # FScript.framework location
 
-By installing F-Script you should place framework in `/Library/Frameworks/FScript.framework`. This is expected location by FScript.osax.
+By installing F-Script you should place framework in `/Library/Frameworks/FScript.framework`. This is default location.
 
 If you need to inject different version or a framework from different location, please create `~/.fscript-framework-location` text file with a new path to your FScript.framework.
 
