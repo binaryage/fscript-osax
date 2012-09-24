@@ -2,7 +2,7 @@
 
 This is a scripting addition which adds a new Apple Script command to inject [F-Script](http://www.fscript.org) to any application.
 
-It is similar to [F-Script Anywhere]() or [F-Script SIMBL](https://bitbucket.org/dainkaplan/fscript-simbl).
+It is similar to [F-Script Anywhere](http://www.fscript.org/download/download.htm) or [F-Script SIMBL](https://bitbucket.org/dainkaplan/fscript-simbl).
 
 # Installation
 
@@ -14,17 +14,23 @@ If you see `** BUILD SUCCEEDED **` that means that you have FScript.osax install
 
 # How to inject F-Script into an app?
 
-Let's say you want to inject F-Script into Safari...
+1. Install [F-Script](http://www.fscript.org/download/download.htm). 
+2. Let's say you want to inject F-Script into Safari...
 
-<span style="color:red; font-size:8pt">You have to relaunch Safari after first installation of FScript.osax. In other case the AppleScript will fail.</span>
-
-## Applescript
+### Applescript
 
     tell application "Safari" to «event BAFSinjc»
 
-## Command line
+### Command line
 
     osascript -e "tell application \"Safari\" to «event BAFSinjc»"
 
+<span style="color:red; font-size:8pt">You have to relaunch Safari after first installation of FScript.osax. In other case the AppleScript will fail.</span>
+
+# FScript.framework location
+
+By installing F-Script you should place framework in `/Library/Frameworks/FScript.framework`. This is expected location by FScript.osax.
+
+If you need to inject different version or a framework from different location, please create `~/.fscript-framework-location` text file with a new path to your FScript.framework.
 
 #### License: [MIT-Style](https://raw.github.com/binaryage/fscript-osax/master/license.txt)
