@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
-		D6ACBEA2117B7D5600F6691C /* HolyCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ACBE9E117B7D5600F6691C /* HolyCrash.m */; };
-		D6ACBEA5117B7D6100F6691C /* HolyCrash.sdef in Resources */ = {isa = PBXBuildFile; fileRef = D6ACBEA4117B7D6100F6691C /* HolyCrash.sdef */; };
+		D6ACBEA2117B7D5600F6691C /* Injector.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ACBE9E117B7D5600F6691C /* Injector.m */; };
+		D6ACBEA5117B7D6100F6691C /* AppleScript.sdef in Resources */ = {isa = PBXBuildFile; fileRef = D6ACBEA4117B7D6100F6691C /* AppleScript.sdef */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		8D576316048677EA00EA77CD /* HolyCrash.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolyCrash.osax; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576316048677EA00EA77CD /* FScript.osax */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FScript.osax; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6ACBE9E117B7D5600F6691C /* HolyCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolyCrash.m; sourceTree = "<group>"; };
-		D6ACBEA4117B7D6100F6691C /* HolyCrash.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HolyCrash.sdef; sourceTree = "<group>"; };
+		D6ACBE9E117B7D5600F6691C /* Injector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Injector.m; sourceTree = "<group>"; };
+		D6ACBEA4117B7D6100F6691C /* AppleScript.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AppleScript.sdef; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +32,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		089C166AFE841209C02AAC07 /* HolyCrash-osax */ = {
+		089C166AFE841209C02AAC07 /* FScript-osax */ = {
 			isa = PBXGroup;
 			children = (
 				08FB77AFFE84173DC02AAC07 /* Source */,
@@ -40,7 +40,7 @@
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
 			);
-			name = "HolyCrash-osax";
+			name = "FScript-osax";
 			sourceTree = "<group>";
 		};
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
@@ -54,7 +54,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D6ACBEA4117B7D6100F6691C /* HolyCrash.sdef */,
+				D6ACBEA4117B7D6100F6691C /* AppleScript.sdef */,
 				8D576317048677EA00EA77CD /* Info.plist */,
 			);
 			name = Resources;
@@ -63,7 +63,7 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D6ACBE9E117B7D5600F6691C /* HolyCrash.m */,
+				D6ACBE9E117B7D5600F6691C /* Injector.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -71,7 +71,7 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D576316048677EA00EA77CD /* HolyCrash.osax */,
+				8D576316048677EA00EA77CD /* FScript.osax */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D57630D048677EA00EA77CD /* HolyCrash.osax */ = {
+		8D57630D048677EA00EA77CD /* FScript.osax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "HolyCrash.osax" */;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "FScript.osax" */;
 			buildPhases = (
 				8D57630F048677EA00EA77CD /* Resources */,
 				8D576311048677EA00EA77CD /* Sources */,
@@ -92,10 +92,10 @@
 			);
 			dependencies = (
 			);
-			name = HolyCrash.osax;
+			name = FScript.osax;
 			productInstallPath = "$(HOME)/Library/Bundles";
-			productName = "HolyCrash-osax";
-			productReference = 8D576316048677EA00EA77CD /* HolyCrash.osax */;
+			productName = "FScript-osax";
+			productReference = 8D576316048677EA00EA77CD /* FScript.osax */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -108,18 +108,18 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = BinaryAge;
 			};
-			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "HolyCrash-osax" */;
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "FScript-osax" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 089C166AFE841209C02AAC07 /* HolyCrash-osax */;
+			mainGroup = 089C166AFE841209C02AAC07 /* FScript-osax */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D57630D048677EA00EA77CD /* HolyCrash.osax */,
+				8D57630D048677EA00EA77CD /* FScript.osax */,
 			);
 		};
 /* End PBXProject section */
@@ -129,7 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6ACBEA5117B7D6100F6691C /* HolyCrash.sdef in Resources */,
+				D6ACBEA5117B7D6100F6691C /* AppleScript.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,15 +142,15 @@
 			files = (
 			);
 			inputPaths = (
-				$BUILT_PRODUCTS_DIR/HolyCrash.osax,
+				$BUILT_PRODUCTS_DIR/FScript.osax,
 			);
 			name = "Install into ~/Library/ScriptingAdditions";
 			outputPaths = (
-				"~/Library/ScriptingAdditions/HolyCrash.osax",
+				"~/Library/ScriptingAdditions/FScript.osax",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# installation step\nrm -rf ~/Library/ScriptingAdditions/HolyCrash.osax\ncp -rf \"$BUILT_PRODUCTS_DIR/HolyCrash.osax\" ~/Library/ScriptingAdditions";
+			shellScript = "# installation step\nrm -rf ~/Library/ScriptingAdditions/FScript.osax\nmkdir -p ~/Library/ScriptingAdditions\ncp -rf \"$BUILT_PRODUCTS_DIR/FScript.osax\" ~/Library/ScriptingAdditions";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -160,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6ACBEA2117B7D5600F6691C /* HolyCrash.m in Sources */,
+				D6ACBEA2117B7D5600F6691C /* Injector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +185,7 @@
 					"-framework",
 					AppKit,
 				);
-				PRODUCT_NAME = HolyCrash;
+				PRODUCT_NAME = FScript;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = osax;
 			};
@@ -206,7 +206,7 @@
 					"-framework",
 					AppKit,
 				);
-				PRODUCT_NAME = HolyCrash;
+				PRODUCT_NAME = FScript;
 				WRAPPER_EXTENSION = osax;
 				ZERO_LINK = NO;
 			};
@@ -241,7 +241,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "HolyCrash.osax" */ = {
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "FScript.osax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB911B08733D790010E9CD /* Debug */,
@@ -250,7 +250,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "HolyCrash-osax" */ = {
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "FScript-osax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB911F08733D790010E9CD /* Debug */,

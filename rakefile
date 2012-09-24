@@ -4,7 +4,7 @@ require 'rake'
 # constants
 
 ROOT_DIR = File.expand_path('.')
-OSAX_PATH = '/Library/ScriptingAdditions/HolyCrash.osax'
+OSAX_PATH = File.expand_path('~/Library/ScriptingAdditions/FScript.osax')
 
 ################################################################################################
 # dependencies
@@ -31,20 +31,20 @@ end
 ################################################################################################
 # tasks
 
-desc "compile and install HolyCrash.osax"
+desc "compile and install FScript.osax"
 task :install do 
     sys("xcodebuild")
 end
 
-desc "uninstall HolyCrash.osax"
+desc "uninstall FScript.osax"
 task :uninstall do 
     sys("rm -rf \"#{OSAX_PATH}\"")
 end
 
-desc "rake crash p=Safari"
-task :crash do 
-    die("specify app name as parameter p, for example `rake crash p=Safari`") unless ENV["p"]
-    sys("osascript -e \"tell application \\\"#{ENV["p"]}\\\" to «event BAHCcrsh»\"")
+desc "rake inject p=Safari"
+task :inject do 
+    die("specify app name as parameter p, for example `rake inject p=Safari`") unless ENV["p"]
+    sys("osascript -e \"tell application \\\"#{ENV["p"]}\\\" to «event BAFSinjc»\"")
 end
 
 task :default => :install

@@ -7,11 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.binaryage.holycrash</string>
+	<string>com.binaryage.fscript.osax</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>HolyCrash</string>
+	<string>FScript</string>
 	<key>CFBundlePackageType</key>
 	<string>osax</string>
 	<key>CFBundleShortVersionString</key>
@@ -21,17 +21,17 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>OSAScriptingDefinition</key>
-	<string>HolyCrash.sdef</string>
+	<string>AppleScript.sdef</string>
 	<key>OSAXHandlers</key>
 	<dict>
 		<key>Events</key>
 		<dict>
-			<key>BAHCcrsh</key>
+			<key>BAFSinjc</key>
 			<dict>
 				<key>Context</key>
 				<string>Process</string>
 				<key>Handler</key>
-				<string>HandleCrashEvent</string>
+				<string>HandleInjectionEvent</string>
 				<key>ThreadSafe</key>
 				<false/>
 			</dict>

@@ -1,41 +1,30 @@
-# HolyCrash.osax
+# FScript.osax
 
-**HolyCrash** is a scripting addition which adds a new Apple Script command to crash any application. Provides you with God's powers.
+This is a scripting addition which adds a new Apple Script command to inject [F-Script](http://www.fscript.org) to any application.
 
-        God answer you on the day you crash,
-        The name God-of-Jacob put you out of harm's reach,
-        Send reinforcements from Holy Hill,
-        Dispatch from Zion fresh supplies,
-        Exclaim over your offerings,
-        Celebrate your sacrifices,
-        Give you what your heart desires,
-        Accomplish your plans.
-    
-        -- Psalm 20 (The Message)
-
-This is useful when you want to debug crash scenarios of your Mac application (for example a crash reporting dialog).
+It is similar to [F-Script Anywhere]() or [F-Script SIMBL](https://bitbucket.org/dainkaplan/fscript-simbl).
 
 # Installation
 
-    git clone git://github.com/binaryage/holycrash-osax.git
-    cd holycrash-osax
+    git clone git://github.com/binaryage/fscript-osax.git
+    cd fscript-osax
     xcodebuild
 
-If you see `** BUILD SUCCEEDED **` that means that you have HolyCrash installed in `~/Library/ScriptingAdditions/HolyCrash.osax`
+If you see `** BUILD SUCCEEDED **` that means that you have FScript.osax installed in `~/Library/ScriptingAdditions/FScript.osax`
 
-# How to crash an app?
+# How to inject F-Script into an app?
 
-Let's say you want to crash Safari...
+Let's say you want to inject F-Script into Safari...
 
-<span style="color:red; font-size:8pt">You have to relaunch Safari after first installation of HolyCrash.osax. In other case the AppleScript will fail.</span>
+<span style="color:red; font-size:8pt">You have to relaunch Safari after first installation of FScript.osax. In other case the AppleScript will fail.</span>
 
 ## Applescript
 
-    tell application "Safari" to «event BAHCcrsh»
+    tell application "Safari" to «event BAFSinjc»
 
 ## Command line
 
-    osascript -e "tell application \"Safari\" to «event BAHCcrsh»"
+    osascript -e "tell application \"Safari\" to «event BAFSinjc»"
 
 
-#### License: [MIT-Style](https://raw.github.com/binaryage/holycrash-osax/master/license.txt)
+#### License: [MIT-Style](https://raw.github.com/binaryage/fscript-osax/master/license.txt)

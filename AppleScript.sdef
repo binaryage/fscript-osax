@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="FScript Terminology">
+    <suite name="FScript Suite" code="BAFS" description="FScript commands">
+        <command name="inject FScript" code="BAFSinjc" description="Inject F-Script into the application"/>
+    </suite>
+</dictionary>
