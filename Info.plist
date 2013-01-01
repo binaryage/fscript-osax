@@ -26,6 +26,33 @@
 	<dict>
 		<key>Events</key>
 		<dict>
+			<key>BAFSsppa</key>
+			<dict>
+				<key>Context</key>
+				<string>Process</string>
+				<key>Handler</key>
+				<string>HandleShowPreferencePanelEvent</string>
+				<key>ThreadSafe</key>
+				<false/>
+			</dict>
+			<key>BAFSoobr</key>
+			<dict>
+				<key>Context</key>
+				<string>Process</string>
+				<key>Handler</key>
+				<string>HandleOpenObjectBrowserEvent</string>
+				<key>ThreadSafe</key>
+				<false/>
+			</dict>
+			<key>BAFSscon</key>
+			<dict>
+				<key>Context</key>
+				<string>Process</string>
+				<key>Handler</key>
+				<string>HandleShowConsoleEvent</string>
+				<key>ThreadSafe</key>
+				<false/>
+			</dict>
 			<key>BAFSinjc</key>
 			<dict>
 				<key>Context</key>

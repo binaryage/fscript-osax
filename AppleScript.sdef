@@ -2,6 +2,9 @@
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 <dictionary title="FScript Terminology">
     <suite name="FScript Suite" code="BAFS" description="FScript commands">
-        <command name="inject FScript" code="BAFSinjc" description="Inject F-Script into the application"/>
+        <command name="inject F-Script" code="BAFSinjc" description="Inject F-Script into the application"/>
+        <command name="show F-Script console" code="BAFSscon" description="Show F-Script console"/>
+        <command name="show F-Script object browser" code="BAFSoobr" description="Show F-Script object browser"/>
+        <command name="open F-Script preference panel" code="BAFSsppa" description="Open F-Script preference panel"/>
     </suite>
 </dictionary>

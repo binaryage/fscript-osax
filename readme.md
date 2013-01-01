@@ -14,7 +14,7 @@ If you see `** BUILD SUCCEEDED **` that means that you have FScript.osax install
 
 # How to inject F-Script into an app?
 
-1. Install [F-Script](http://www.fscript.org/download/download.htm). 
+1. Install [F-Script](http://www.fscript.org/download/download.htm).
 2. Let's say you want to inject F-Script into Safari...
 
 ### Applescript
@@ -26,6 +26,14 @@ If you see `** BUILD SUCCEEDED **` that means that you have FScript.osax install
     osascript -e "tell application \"Safari\" to «event BAFSinjc»"
 
 <span style="color:red; font-size:8pt">You have to relaunch Safari after first installation of FScript.osax. In other case the AppleScript will fail.</span>
+
+### Applications without main menu
+
+You may use apple events to control F-Script menu item:
+
+    osascript -e "tell application \"Safari\" to «event BAFSscon» -- show console"
+    osascript -e "tell application \"Safari\" to «event BAFSoobr» -- open object browser"
+    osascript -e "tell application \"Safari\" to «event BAFSsppa» -- show preference panel"
 
 # FScript.framework location
 
